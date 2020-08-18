@@ -1166,14 +1166,17 @@ input[type='checkbox'] {
 
 
  .carousel-inner > .carousel-item {
-  padding-left:36%!important;
-  padding-right:28%!important;
+  /* padding-left:36%!important;
+  padding-right:28%!important; */
+
+  padding-left:18%!important;
+  padding-right:18%!important;
 }
 
 .carousel-inner > .carousel-item > img{
- width:75%!important;
- height:430px!important;
- margin-bottom: 15%;
+ width:100%!important;
+ /* height:430px!important; */
+ /* margin-bottom: 15%; */
 }
 
 .basic-3 .text-container {
