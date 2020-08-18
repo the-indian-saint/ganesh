@@ -1175,7 +1175,8 @@ input[type='checkbox'] {
 
 .carousel-inner > .carousel-item > img{
  width:100%!important;
- /* height:430px!important; */
+ /* height:430px!important;
+  */
  /* margin-bottom: 15%; */
 }
 
@@ -1286,7 +1287,7 @@ input[type='checkbox'] {
 
 .slider-2 .swiper-container {
 	position: static;
-	width: 90%;
+	width: 100%;
 	text-align: center;
 }
 
