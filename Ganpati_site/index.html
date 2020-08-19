@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Website Title -->
     <title>Ganpati</title>
 
     <!-- Styles -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/magnific-popup.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
 
-	<!-- Favicon  -->
+    <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <!-- <link href="css/fontawesome-all.css" rel="stylesheet"> -->
+    <!-- <link href="css/swiper.css" rel="stylesheet"> -->
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
 
+<body data-spy="scroll" data-target=".fixed-top">
     <!-- Preloader -->
-	<div class="spinner-wrapper">
+    <div class="spinner-wrapper">
         <div class="spinner">
             <div class="bounce1"></div>
             <div class="bounce2"></div>
@@ -33,286 +42,418 @@
     <!-- end of preloader -->
 
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-
-        <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="images/Vector_Smart_Object.png" alt="alternative"></a>
-
-        <!-- Mobile Menu Toggle Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-awesome fas fa-bars"></span>
-            <span class="navbar-toggler-awesome fas fa-times"></span>
-        </button>
-        <!-- end of mobile menu toggle button -->
-
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#gallery">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#details">Committee</a>
-                </li>
-
-                <!-- <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#details2">Events</a>
-                </li> -->
-
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#preview">Contact Us</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#preview">Donation</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#preview">LIVE</a>
-                </li>
-
-                <!-- end of dropdown menu -->
-            </ul>
-        </div>
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
-
 
     <!-- Header -->
-    <header id="header" class="header">
-        <div class="header-content">
-            <div class="container">
-                <div class="row">
-                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                      <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                      </ol>
-                      <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                          <img src="images/ganpati/IMG_3274.JPG"  class="img-fluid" alt="alternative">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="images/ganpati/IMG-20200723-WA0005.jpg" class="img-fluid" alt="alternative">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="images/ganpati/IMG-20200723-WA0006.jpg" class="img-fluid" alt="alternative">
-                        </div>
-                      </div>
-                    </div>
+    <header id="header" class="scrollspy">
+        <div class="navbar-fixed">
+            <!-- Navigation -->
+            <nav>
+                <div class="nav-wrapper">
+                    <!-- Image Logo -->
+                    <a class="brand-logo" href="#header"><img src="images/Vector_Smart_Object.png" alt="org_image"></a>
+                    <a href="#header" data-target="mobile-demo" class="sidenav-trigger"><i
+                            class="material-icons">menu</i></a>
+
+                    <!-- Mobile Menu Toggle Button -->
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-awesome fas fa-bars"></span>
+                        <span class="navbar-toggler-awesome fas fa-times"></span>
+                    </button> -->
+                    <ul class="sidenav" id="mobile-demo">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#header">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#details">Committee</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#preview">Donation</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#preview">LIVE</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                    <!-- end of mobile menu toggle button -->
+                    <ul class="right hide-on-med-and-down">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#header">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutUs">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#details">Committee</a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                                <a class="nav-link" href="#details2">Events</a>
+                            </li> -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#preview">Donation</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#preview">LIVE</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                        <!-- end of dropdown menu -->
+                    </ul>
                 </div>
-            </div>
+            </nav> <!-- end of navbar -->
+        </div>
+        <!-- end of navigation -->
+
+
+        <!-- <div class="header-content"> -->
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="images/ganpati/mainImg2.png" style="height:auto;" class="responsive-img"
+                        alt="ganpati_main">
+                </li>
+                <li>
+                    <img src="images/ganpati/IMG-20200723-WA0005.jpg" class="responsive-img" alt="sideView">
+                </li>
+                <li>
+                    <img src="images/ganpati/FB_IMG_1578630520689.jpg" class="responsive-img" alt="ganeshView3">
+                </li>
+                <li>
+                    <img src="images/ganpati/IMG-20200723-WA0006.jpg" class="responsive-img" alt="ganeshView3">
+                    <div class="caption right-align">
+                        <h3>Ganpati Bappa Morye!</h3>
+                        <!-- <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+                    </div>
+                </li>
+            </ul>
+            <!-- </div> -->
         </div>
     </header>
+    <div class="container">
+        <!-- Screenshots -->
+        <div id="aboutUs" class="scrollspy alternateDiv">
+            <h4>The First Step…</h4>
+            <div style="height: 15rem;overflow-y:scroll;background-color: white;">
+                <p class="flow-text">
+                    When enthusiasm is at its peak, when the festive mood settles in, when communities come together,
+                    and
+                    when you hear people cheering and reciting “Ganpati Bappa Morya”, you know Lord Ganesha has arrived.
+                    Ganpati is also known as Gajanana because he possesses anana (head) of gaj (commonly considered as
+                    elephant). However, the vedic puranas refer gaj (symbolizing immortal wisdom) as the opposite of jag
+                    (symbolizing world as a mortal entity). Gajanana, the lord of wisdom, not only shows us the path but
+                    also paves the path for us, only if we are willing to walk the path.
+                    Lokmanya Bal Gangadhar Tilak started the festival of Ganesh Chaturthi in order to bring the masses
+                    together and more importantly to establish a perpetual stream of thought in the society by bridging
+                    the
+                    gap between the common thoughts and the uncommon intelligence. Tilak was a visionary, an astute man
+                    who
+                    wanted the society to progress.
+                </p>
+                <p class="flow-text">
+                    Tilak’s Ganeshotav assumed the nature of a gala public celebration. Though the nature of the
+                    festival
+                    was visible and comprehensible, its core remained partly unfathomable. Thus, even though the reasons
+                    for
+                    celebration changed, the need for awakening and spreading awareness still has not ceased. In the
+                    evolution of new era, technology advanced, society progressed, but the changes were not reflected in
+                    the
+                    way the festival was celebrated. Traditions were well adopted but the changes were not adapted. As
+                    years
+                    passed, the festival was celebrated with greater devotion, however Mother Nature suffered a lot due
+                    to
+                    man’s unwanted intervention. It was crucial to accurately assess the situation and we are proud of
+                    the
+                    fact that we are trying to accomplish it.
+                </p>
+                <p class="flow-text">
+                    Mahatma Gandhi once said, “be the change you wish to see in the world”; comprehending this adage, in
+                    2010 K.D.G.B. Niwas, Girgaon adopted the new concept of establishing Mumbai’s first ever
+                    eco-friendly
+                    Ganesh Festival; thereby adapting the new practices. A durable idol made of fiber was set up in the
+                    society premises. A temple-like structure was created for the idol in the society. George Bernard
+                    Shaw
+                    said, “Progress is impossible without change and those who cannot change their minds cannot change
+                    anything.” It takes time to accept change. However, our generation believes that if the change is
+                    for
+                    the benefit of all, then it does get accepted sooner or later. Since our intention was good, we did
+                    not
+                    worry about the consequences. That year, everyone was curious, because the idol was not going to
+                    arrive
+                    from outside as always, but rather the procession was going to start from the society premises
+                    itself
+                    and the idol was going to be welcomed and placed in the decorated pandal built in the society. Like
+                    every year, Bappa arrived in a procession accompanied with the divine music from the drumbeats. Many
+                    changes have taken place ever since, have even been accepted, but what has remained unchanged to
+                    date is
+                    the sheer serenity and contentment that one gets to experience in those 11 days. As always, those 11
+                    days were divine, filled with fun, excitement, and peace. There was bewilderment as the time
+                    approached
+                    to bid adieu to our beloved Bappa. There was an uneasy feeling of longing, but the idol was anyway
+                    coming back to the society premises! That was a moment of enlightenment. That was when we realized
+                    that
+                    the idol was just an image, a source; while the basis of celebration is in our minds and its
+                    acknowledgement are the teary eyes and heavy heart at the time of the Maha-aarti (divine song) while
+                    bidding goodbye to the remover of obstacles, Lord Ganesha... This was the very moment of true
+                    awakening.
+                    Ganesha’s immersion procession was just a visit to Girgaon Chowpatty and back. The immersion
+                    ceremony
+                    was as grand as the welcome, with lazim, drum-beats, trumpets, devotional songs and dancing.
+                    Usually,
+                    the immersion ritual is accomplished by releasing the idol into the sea. However, that year we
+                    carried
+                    out all the pre-immersion rituals and returned with the idol. On the way back we faced an array of
+                    rhetoric questions, expressions and of course, different exclamations from the people who were
+                    taking
+                    their idols for immersion. But without ignoring them or reacting to any of those with sarcasm, we
+                    tried
+                    to answer all respectfully. We explained to them the concept of our eco-friendly way of celebration
+                    since we wanted to spread awareness in the society and not simply keep it restricted to our own
+                    community. As quoted by Wendell Berry, “The Earth is what we all have in common.”
+                </p>
+                <p class="flow-text">
+                    In this framework the association formed by the youth of K.D.G.B. Niwas took up the task of
+                    decorating
+                    the Ganesh pandal that reflected the current situations in the world. Themes like “Save Water”,
+                    “Save
+                    Trees”, ‘Female foeticide’, ‘Crimes against Women’, ‘Global Warming’, ‘Right to Education’ and such
+                    other social issues were brought to the fore. Thanks to the students of J.J. School of Arts, Mumbai,
+                    Chetana College and other such institutions who with the stroke of their brush wonderfully portrayed
+                    these issues on the walls of the pandal. Similarly, the association is also carrying out several
+                    workshops, blood donation drives, free eye check-up and medical camps with the help of the amount
+                    collected from the donations. The nature of eco-friendly celebration is evolving over the years. The
+                    association has also been organizing various resourceful programs for the welfare of the society and
+                    the
+                    environment.
+                </p>
+                <p class="flow-text">
+                    The association is conducting several competitions and programs for the residents of K.D.G.B. Niwas.
+                    The
+                    most popular of these is the ‘Treasure Hunt’ competition. It is laudable how the older generation
+                    runs
+                    for clues on the streets of Girgaon. Another most-awaited competition is the ‘Annakot’ or cooking
+                    competition. Everyone, kids and adults alike, waits for the competition to end just to relish/feast
+                    upon
+                    the delectable dishes presented by the female as well as the male chefs of Niwas. Apart from
+                    spreading
+                    awareness in the society, we also consider it to be our duty to educate and discipline the new
+                    generations. Therefore, memory games, drawing-painting competitions, outdoor games, indoor games, as
+                    well as dancing, singing competitions, musical chairs among others are organized for all age groups.
+                    What is praiseworthy is the high energy that is experienced for drama as the kids start writing the
+                    story and rehearsing their dialogues in the summer vacation, which is almost 3-4 months before the
+                    Ganesh Festival.
+                </p>
+                <p class="flow-text">
+                    Besides these activities, the holy fabric (uparane and sovale) on the idol is changed every day in
+                    those
+                    11 days. Ganeshyaag, a ritual of Ganesh Puja is organized on a Sunday so that most of the residents
+                    can
+                    be available for the same. Likewise, Mahaprasad, feast is also arranged for all. An important point
+                    to
+                    be noted is that the food is served in bio-degradable banana-leaf dishes and bowls. This is the best
+                    time as the current as well as the residents who resided in Niwas previously meet each other after a
+                    year and exchange greetings! The residents not only relish the feast but also actively volunteer in
+                    arranging the tables and serving the food.
+                    “The greatest threat to our planet is the belief that someone else will save it.” – Robert Swan. We
+                    know
+                    that charity begins at home. For that, we have taken the first step and expect that others will
+                    follow
+                    our lead in saving Mother Nature and thereby fulfilling the true objective behind Sarvajanik
+                    (public)
+                    Ganeshotsav.
+                </p>
+            </div>
+            <h5 class="right-align"> Manasi Aditya Sarnaik</h5>
+        </div>
 
-    <!-- Screenshots -->
-    <div class="slider-2" id="gallery">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
 
-                    <div class="slider-container">
-                      <h4>Gallery</h4>
-                        <div class="swiper-container image-slider">
-                            <div class="swiper-wrapper">
+        <!-- Screenshots -->
+        <div id="gallery" class="scrollspy alternateDiv">
+            <!-- <div class="container"> -->
+            <div class="carousel">
+                <h4>Gallery</h4>
+                <a href="images/ganpati/FB_IMG_1578630508672.jpg" class="carousel-item" data-effect="fadeIn">
+                    <img class="responsive-img" src="images/ganpati/FB_IMG_1578630508672.jpg" alt="alternative">
+                </a>
+                <a href="images/ganpati/IMG_0012 (2).jpg" class="carousel-item" data-effect="fadeIn">
+                    <img class="responsive-img" src="images/ganpati/IMG_0012 (2).jpg" alt="alternative">
+                </a>
+                <a href="images/ganpati/FB_IMG_1578630570102.jpg" class="carousel-item" data-effect="fadeIn">
+                    <img class="responsive-img" src="images/ganpati/FB_IMG_1578630570102.jpg" alt="alternative">
+                </a>
+                <a href="images/ganpati/IMG-20200723-WA0001.jpg" class="carousel-item" data-effect="fadeIn">
+                    <img class="responsive-img" src="images/ganpati/IMG-20200723-WA0001.jpg" alt="alternative">
+                </a>
+                <a href="images/ganpati/IMG_0035 (2).jpg" class="carousel-item" data-effect="fadeIn">
+                    <img class="responsive-img" src="images/ganpati/IMG_0035 (2).jpg" alt="alternative">
+                </a>
 
-                                <div class="swiper-slide">
-                                    <a href="images/ganpati/FB_IMG_1578630508672.jpg" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/ganpati/FB_IMG_1578630508672.jpg" alt="alternative">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="images/ganpati/IMG_0012 (2).jpg" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/ganpati/IMG_0012 (2).jpg" alt="alternative">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="images/ganpati/FB_IMG_1578630570102.jpg" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/ganpati/FB_IMG_1578630570102.jpg" alt="alternative">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="images/ganpati/IMG-20200723-WA0001.jpg" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/ganpati/IMG-20200723-WA0001.jpg" alt="alternative">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="images/ganpati/IMG_0035 (2).jpg" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/ganpati/IMG_0035 (2).jpg" alt="alternative">
-                                    </a>
-                                </div>
-
-                                <!-- <div class="swiper-slide">
-                                    <a href="images/IMG-20200723-WA0001.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/IMG-20200723-WA0001.png" alt="alternative">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="images/IMG_0035.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/IMG_0035.png" alt="alternative">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="images/_MG_7105.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/_MG_7105.png" alt="alternative">
-                                    </a>
-                                </div> -->
-                            </div>
-
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-
-                        </div>
-                    </div>
-
-                </div>
+                <!-- <a href="images/IMG-20200723-WA0001.png" class="carousel-item" data-effect="fadeIn">
+                            <img class="responsive-img" src="images/IMG-20200723-WA0001.png" alt="alternative">
+                        </a> -->
+                <!-- <a href="images/IMG_0035.png" class="carousel-item" data-effect="fadeIn">
+                            <img class="responsive-img" src="images/IMG_0035.png" alt="alternative">
+                        </a> -->
+                <!-- <a href="images/_MG_7105.png" class="carousel-item" data-effect="fadeIn">
+                            <img class="responsive-img" src="images/_MG_7105.png" alt="alternative">
+                        </a> -->
             </div>
         </div>
-    </div>
 
-    <!-- Details 1 -->
-    <div id="details" class="basic-2">
-        <div class="container">
+        <!-- Details 1 -->
+        <div id="details" class="basic-2 scrollspy alternateDiv">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col l6 detailsView">
                     <div class="text-container">
                         <h4>Committee</h4>
                         <p>
-                          Coming Soon
+                            Coming Soon
+                        </p>
+                    </div>
+                    <div class="imgDiv">
+                        <img class="materialboxed responsive-img" src="images/ganpati/_DSC2880.jpg" alt="alternative">
+                        <!-- <img class="materialboxed responsive-img" src="images/ganpati/committee1.jpg" alt="alternative"> -->
+                        <img class="materialboxed responsive-img" src="images/ganpati/FB_IMG_1578630500839.jpg"
+                            alt="alternative">
+                        <!-- <img class="materialboxed responsive-img" src="images/ganpati/_DSC2880.jpg" alt="alternative"> -->
+                    </div>
+                </div>
+                <div class="col l6 detailsView">
+                    <div class="imgDiv">
+                        <img class="materialboxed responsive-img" src="images/ganpati/event1.jpg" alt="alternative">
+                        <img class="materialboxed responsive-img" src="images/ganpati/event2.JPG" alt="alternative">
+                    </div>
+                    <div class="text-container">
+                        <h4>Events</h4>
+                        <p>
+                            Coming Soon
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <img class="img-fluid" src="images/ganpati/_DSC2880.jpg" alt="alternative">
-                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Details 2 -->
-    <!-- <div id="details2" class="basic-3">
-        <div class="second">
-            <div class="container">
-                <div class="row">
-                  <div class="col-lg-6">
-                      <img class="img-fluid" src="images/ganpati/FB_IMG_1578630500839.jpg" alt="alternative">
-                  </div>
-                    <div class="col-lg-6">
-                        <div class="text-container">
-                            <h4>Events</h4>
-                            <p>
-                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- Footer -->
-    <div class="footer">
-        <div class="container">
+        <!-- Details 2 -->
+        <div id="preview" class="alternateDiv scrollspy">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="footer-col">
-                        <h4>About Us</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <div class="col l6 detailsView">
+                    <div class="text-container">
+                        <h4>DONATIONS</h4>
+                        <p>
+                            Coming Soon
+                        </p>
                     </div>
-                </div> <!-- end of col -->
-                <div class="col-md-4">
-                    <div class="footer-col middle">
-                        <h4>Contact Us</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <div class="media-body">About Us</div>
-                            </li>
-                            <li class="media">
-                                <div class="media-body">Concept</div>
-                            </li>
-                            <li class="media">
-                                <div class="media-body">Gallery</div>
-                            </li>
-                            <li class="media">
-                                <div class="media-body">Committee & Evenets</div>
-                            </li>
-                            <li class="media">
-                                <div class="media-body">Sponsors & Donation</div>
-                            </li>
-                        </ul>
+                    <button class="classicBtn waves-effect">PAY HERE</button>
+                </div>
+                <div class="col l6 detailsView">
+                    <div class="text-container">
+                        <h4>LIVE AARTI</h4>
+                        <p>
+                            Coming Soon
+                        </p>
                     </div>
-                </div> <!-- end of col -->
-                <div class="col-md-4">
-                    <div class="footer-col last">
-                        <h4>Follow Us</h4>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
+                    <button class="classicBtn waves-effect">WATCH HERE</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div id="contact" class="row scrollspy" style="margin-bottom: 0;">
+            <div class="col s6 l6">
+                <h4 style="color: white;">Contact Us</h4>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="media">
+                        <div class="media-body">Concept</div>
+                    </li>
+                    <li class="media">
+                        <div class="media-body">Gallery</div>
+                    </li>
+                    <li class="media">
+                        <div class="media-body">Committee & Evenets</div>
+                    </li>
+                    <li class="media">
+                        <div class="media-body">Sponsors & Donation</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s6 l6">
+                <div class="footer-col last">
+                    <h4 style="color: white;">Follow Us</h4>
+                    <div class="refer-icons">
+                        <a href="#" style="margin-right: 0.5rem;">
+                            <img src="./images/icons/facebook.png" class="responsive-img" alt="facebook">
+                        </a>
+                        <a href="#" style="margin-right: 0.5rem;">
+                            <img src="./images/icons/instagram.png" class="responsive-img" alt="instagram">
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/twitter.png" class="responsive-img" alt="twitter">
+                        </a>
                     </div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <h6 class="center-align">Copyright © 2020 <a href="#">Inovatik</a> - All rights reserved</h6>
+        </div> <!-- end of copyright -->
+        <!-- end of copyright -->
+    </footer> <!-- end of footer -->
     <!-- end of footer -->
 
 
-    <!-- Copyright -->
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2020 <a href="#">Inovatik</a> - All rights reserved</p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright -->
-    <!-- end of copyright -->
 
 
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="js/jquery.easing.min.js"></script>
-    <script src="js/swiper.min.js"></script>
+    <!-- <script src="js/swiper.min.js"></script> -->
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/morphext.min.js"></script>
     <script src="js/validator.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 
     <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 4,
-      spaceBetween:20,
-      autoplay: {
-        delay: 5000,
-      },
-    });
-  </script>
+        // var swiper = new Swiper('.swiper-container', {
+        //     slidesPerView: 4,
+        //     spaceBetween: 20,
+        //     autoplay: {
+        //         delay: 5000,
+        //     },
+        // });
+        $(document).ready(function () {
+
+            $('.slider').slider({
+                height: 575
+            });
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.carousel').carousel();
+            $('.scrollspy').scrollSpy();
+        });
+
+    </script>
+
 </body>
+
 </html>
