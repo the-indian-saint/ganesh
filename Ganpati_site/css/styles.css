@@ -58,6 +58,22 @@ a.sidenav-trigger {
   text-decoration: none;
 }
 
+.aboutUsRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.aboutDiv {
+  display: flex;
+  height: 9rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
 .aboutUsDiv {
   background: #e56c34;
   color: #f9d3ac;
@@ -86,6 +102,18 @@ p {
   text-align: center;
 }
 
+.aboutMainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 41rem;
+  color: white;
+  background-image: url("./../images/ganpati/ganpatiBG.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 40rem;
+}
+
 .li-space-lg li {
   margin-bottom: 0.375rem;
 }
@@ -94,11 +122,12 @@ p {
   padding-left: 1.25rem;
 }
 
-.aboutDiv {
-  display: flex;
-  height: 9rem;
-  justify-content: space-between;
-  flex-direction: column;
+.eventTop {
+  display: none;
+}
+
+.eventBottom {
+  display: block;
 }
 
 .title {
@@ -509,6 +538,21 @@ nav {
   border: 2px solid #e56c34;
 }
 
+.classicAboutBtn {
+  padding: 0.5rem 2rem;
+  width: fit-content;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: white;
+  border-radius: 0.6rem;
+  background: transparent;
+  border: 2px solid white;
+}
+
+.classicAboutBtn:hover {
+  background-color: rebeccapurple;
+}
+
 .modal {
   width: 98% !important;
 }
@@ -780,10 +824,9 @@ nav {
   align-items: center;
 }
 .basic-2 {
-  padding-top: 2rem;
-  padding-bottom: 3.5rem;
-  /*background-color: #262431;*/
-  background-color: #fff;
+  padding: 2rem 2rem 0;
+  background-color: #262431;
+  /* background-color: #fff; */
 }
 
 .basic-2 img {
@@ -1207,13 +1250,21 @@ a:hover.back-to-top {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 576px) {
   .eventTop {
-    display: flex;
-  }
-  .eventBottom {
     display: block;
   }
+  .eventBottom {
+    display: none;
+  }
   .aboutDiv {
-    height: auto;
+    height: 17rem !important;
+  }
+  .aboutUsRow {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .refer-icons {
+    margin-left: 3rem !important;
   }
 }
 @media only screen and (max-width: 968px) {
@@ -1221,14 +1272,14 @@ a:hover.back-to-top {
     height: 10.5rem;
   }
 }
-@media only screen and (min-width: 576px) {
+/* @media only screen and (min-width: 576px) {
   .eventTop {
     display: none;
   }
   .eventBottom {
     display: block;
   }
-}
+} */
 
 @media only screen and (max-width: 968px) {
   .marathiTrans {
@@ -1239,7 +1290,7 @@ a:hover.back-to-top {
 
   .nav-wrapper .brand-logo img {
     position: relative;
-    top: -29px;
+    top: 0px;
     left: 14px;
   }
 
