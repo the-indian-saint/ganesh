@@ -49,24 +49,25 @@
         <!-- SideNav -->
         <ul class="sidenav" id="mobile-demo">
             <li>
-                <a href="#header">Home</a>
+                <a class="sidenav-link" href="#header">Home</a>
             </li>
             <li>
-                <a href="#gallery">Gallery</a>
+                <a class="sidenav-link" href="#gallery">Gallery</a>
             </li>
             <li>
-                <a href="#details">Committee</a>
+                <a class="sidenav-link" href="#details">Committee</a>
             </li>
             <li>
-                <a href="#preview">Donation</a>
-            </li>
-
-            <li>
-                <a href="#preview">LIVE</a>
+                <a class="sidenav-link" href="#preview">Donation</a>
             </li>
 
             <li>
-                <a href="#contact">Contact Us</a>
+                <a class="sidenav-link" href="#preview">LIVE
+                </a>
+            </li>
+
+            <li>
+                <a class="sidenav-link" href="#contact">Contact Us</a>
             </li>
         </ul>
         <div class="navbar-fixed">
@@ -108,11 +109,14 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#preview">LIVE</a>
+                            <a class="nav-link" href="#preview" style="padding-right: 0;">LIVE
+                                <img class="liveIcon" src="./images/icons/live.gif" alt="Live" width="30"
+                                    style="position: relative;left:-6px">
+                            </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact Us</a>
+                            <a class="nav-link" href="#contact" style="padding-left: 0;">Contact Us</a>
                         </li>
                         <!-- end of dropdown menu -->
                     </ul>
@@ -129,7 +133,7 @@
                     <img src="images/ganpati/mainImg2.png" style="height:auto;" class="responsive-img"
                         alt="ganpati_main">
                 </li>
-                <li>
+                <!-- <li>
                     <img src="images/ganpati/IMG-20200723-WA0005.jpg" class="responsive-img" alt="sideView">
                 </li>
                 <li>
@@ -138,10 +142,10 @@
                 <li>
                     <img src="images/ganpati/IMG-20200723-WA0006.jpg" class="responsive-img" alt="ganeshView3">
                     <div class="caption right-align">
-                        <h3>Ganpati Bappa Morye!</h3>
-                        <!-- <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
-                    </div>
-                </li>
+                        <h3>Ganpati Bappa Morye!</h3> -->
+                <!-- <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+                <!-- </div>
+                </li> -->
             </ul>
             <!-- </div> -->
         </div>
@@ -278,8 +282,8 @@
                     (public)
                     Ganeshotsav.
                 </p>
+                <h5 class="right-align" style="color: #E56C34; margin-right: 3rem;">-- Manasi Aditya Sarnaik</h5>
             </div>
-            <h5 class="right-align"> Manasi Aditya Sarnaik</h5>
         </div>
 
 
@@ -319,7 +323,7 @@
         <!-- Details 1 -->
         <div id="details" class="basic-2 scrollspy alternateDiv">
             <div class="row">
-                <div class="col l6 detailsView">
+                <div class="col s12 m6 l6 detailsView">
                     <div class="text-container">
                         <h4>Committee</h4>
                         <p>
@@ -334,7 +338,7 @@
                         <!-- <img class="materialboxed responsive-img" src="images/ganpati/_DSC2880.jpg" alt="alternative"> -->
                     </div>
                 </div>
-                <div class="col l6 detailsView">
+                <div class="col s12 m6 l6 detailsView">
                     <div class="imgDiv">
                         <img class="materialboxed responsive-img" src="images/ganpati/event1.jpg" alt="alternative">
                         <img class="materialboxed responsive-img" src="images/ganpati/event2.JPG" alt="alternative">
@@ -352,7 +356,7 @@
         <!-- Details 2 -->
         <div id="preview" class="alternateDiv scrollspy">
             <div class="row">
-                <div class="col l6 detailsView">
+                <div class="col s12 m6 l6 donationView">
                     <div class="text-container">
                         <h4>DONATIONS</h4>
                         <p>
@@ -361,7 +365,7 @@
                     </div>
                     <button class="classicBtn waves-effect">PAY HERE</button>
                 </div>
-                <div class="col l6 detailsView">
+                <div class="col s12 m6 l6 donationView">
                     <div class="text-container">
                         <h4>LIVE AARTI</h4>
                         <p>
@@ -375,48 +379,56 @@
 
     </div>
     <!-- Footer -->
-    <footer class="page-footer">
-        <div id="contact" class="row scrollspy" style="margin-bottom: 0;">
-            <div class="col s6 l6">
-                <h4 style="color: white;">Contact Us</h4>
-                <ul class="list-unstyled li-space-lg">
-                    <li class="media">
-                        <div class="media-body">Concept</div>
-                    </li>
-                    <li class="media">
-                        <div class="media-body">Gallery</div>
-                    </li>
-                    <li class="media">
+    <footer class="page-footer" style="background-color: #E56C34;">
+        <div class="container">
+            <div id="contact" class="row scrollspy" style="margin-bottom: 0;">
+                <div class="col s12 m6 l6 contactDiv">
+                    <h4 style="color: white;">Contact Us</h4>
+                    <h6>
+                        <a href="tel:+919892892822" class="contactDetails">
+                            <i class="material-icons">contacts</i><span>+91 9892892822</span>
+                        </a>
+                    </h6>
+                    <!-- <div class="media-body">Concept</div> -->
+                    <h6>
+                        <a href="tel:+919876543210" class="contactDetails">
+                            <i class="material-icons">local_phone</i><span>+91 9876543210</span>
+                        </a>
+                    </h6>
+                    <!-- <div class="media-body">Gallery</div> -->
+                    <!-- <li class="media">
                         <div class="media-body">Committee & Evenets</div>
                     </li>
                     <li class="media">
                         <div class="media-body">Sponsors & Donation</div>
-                    </li>
-                </ul>
-            </div>
-            <div class="col s6 l6">
-                <div class="footer-col last">
-                    <h4 style="color: white;">Follow Us</h4>
-                    <div class="refer-icons">
-                        <a href="#" style="margin-right: 0.5rem;">
-                            <img src="./images/icons/facebook.png" class="responsive-img" alt="facebook">
-                        </a>
-                        <a href="#" style="margin-right: 0.5rem;">
-                            <img src="./images/icons/instagram.png" class="responsive-img" alt="instagram">
-                        </a>
-                        <a href="#">
-                            <img src="./images/icons/twitter.png" class="responsive-img" alt="twitter">
-                        </a>
-                    </div>
+                    </li> -->
                 </div>
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
+                <div class="col s12 m6 l6 contactDiv">
+                    <div class="footer-col last">
+                        <h4 style="color: white;">Follow Us</h4>
+                        <div class="refer-icons">
+                            <a href="#" style="margin-right: 1rem;">
+                                <img class="contactIcon" src="./images/icons/facebook.png" class="responsive-img"
+                                    alt="facebook" width="30">
+                            </a>
+                            <a href="#" style="margin-right: 1rem;">
+                                <img class="contactIcon" src="./images/icons/instagram.png" class="responsive-img"
+                                    alt="instagram" width="30">
+                            </a>
+                            <a href="#">
+                                <img class="contactIcon" src="./images/icons/twitter.png" class="responsive-img"
+                                    alt="twitter" width="30">
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
         </div>
         <!-- Copyright -->
-        <div class="footer-copyright">
+        <div class="footer-copyright" style="justify-content: center !important;">
             <h6 class="center-align">Copyright © 2020 <a href="#">Inovatik</a> - All rights reserved</h6>
         </div> <!-- end of copyright -->
-        <!-- end of copyright -->
+        <!--  end of copyright -->
     </footer> <!-- end of footer -->
     <!-- end of footer -->
 
@@ -425,13 +437,13 @@
 
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
+    <!-- <script src="js/popper.min.js"></script> -->
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="js/jquery.easing.min.js"></script>
     <!-- <script src="js/swiper.min.js"></script> -->
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/morphext.min.js"></script>
-    <script src="js/validator.min.js"></script>
+    <!-- <script src="js/validator.min.js"></script> -->
     <script src="js/scripts.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
@@ -445,7 +457,8 @@
         // });
         $(document).ready(function () {
             $('.slider').slider({
-                height: 575
+                height: 575,
+                // interval: 5000,
             });
             $('.sidenav').sidenav();
             $('.materialboxed').materialbox();
