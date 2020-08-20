@@ -1212,8 +1212,15 @@ a:hover.back-to-top {
   .eventBottom {
     display: block;
   }
+  .aboutDiv {
+    height: auto;
+  }
 }
-
+@media only screen and (max-width: 968px) {
+  .aboutDiv {
+    height: 10.5rem;
+  }
+}
 @media only screen and (min-width: 576px) {
   .eventTop {
     display: none;
