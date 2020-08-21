@@ -23,7 +23,7 @@
     //detect Scroll to show navbar
     $(window).scroll(function () {
         let scroll = $(window).scrollTop();
-        // console.log('Sc', scroll);
+        console.log('Sc', scroll);
         if (scroll < 10) {
             $(".nav-wrapper").css("background", "transparent");
             $(".nav-wrapper .brand-logo img").css("width", "100px");
@@ -46,6 +46,11 @@
         }
         else if (scroll > 2601 && scroll < 3170) {
             $(".nav-wrapper").css("background", "linear-gradient(to right bottom, #DF3D42,#611F3B)");
+            $(".nav-wrapper .brand-logo img").css("width", "60px");
+            $(".liveIcon").css("opacity", "0");
+        }
+        else if (scroll > 3171) {
+            $(".nav-wrapper").css("background", "linear-gradient(to right bottom,#531C0C,#A24E40,coral)");
             $(".nav-wrapper .brand-logo img").css("width", "60px");
             $(".liveIcon").css("opacity", "0");
         }

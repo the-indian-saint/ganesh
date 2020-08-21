@@ -128,7 +128,23 @@ p {
 
 .footerDiv {
   color: white;
-  background-image: url("./../images/background/contactBG.jpg");
+  background-image: url("./../images/background/contactsBG.jpg");
+}
+
+.imgDiv {
+  height: 48rem;
+  overflow-y: auto;
+}
+.collage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.collageMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .li-space-lg li {
@@ -547,7 +563,8 @@ nav {
   font-weight: 600;
   color: magenta;
   border-radius: 0.6rem;
-  background: transparent;
+  background: floralwhite;
+  opacity: 0.7;
   border: 2px solid floralwhite;
 }
 
