@@ -23,24 +23,34 @@
     //detect Scroll to show navbar
     $(window).scroll(function () {
         let scroll = $(window).scrollTop();
-        console.log('Sc', scroll);
+        // console.log('Sc', scroll);
         if (scroll < 10) {
             $(".nav-wrapper").css("background", "transparent");
             $(".nav-wrapper .brand-logo img").css("width", "100px");
             $(".liveIcon").css("opacity", "1");
         }
-        else if (scroll > 615 && scroll < 1220) {
+        else if (scroll > 615 && scroll < 1184) {
             $(".nav-wrapper").css("background", "linear-gradient(to right bottom, #7751A8,black)");
             $(".nav-wrapper .brand-logo img").css("width", "60px");
             $(".liveIcon").css("opacity", "0");
         }
-        else if (scroll > 1588 && scroll < 2800) {
+        else if (scroll > 1185 && scroll < 1819) {
+            $(".nav-wrapper").css("background", "linear-gradient(to right top, #a11f41, #d33638, #641501fc, #f62525ed, #cb6c03)");
+            $(".nav-wrapper .brand-logo img").css("width", "60px");
+            $(".liveIcon").css("opacity", "0");
+        }
+        else if (scroll > 1820 && scroll < 2600) {
             $(".nav-wrapper").css("background", "linear-gradient(to right bottom,black, #262431)");
             $(".nav-wrapper .brand-logo img").css("width", "60px");
             $(".liveIcon").css("opacity", "0");
         }
+        else if (scroll > 2601 && scroll < 3170) {
+            $(".nav-wrapper").css("background", "linear-gradient(to right bottom, #DF3D42,#611F3B)");
+            $(".nav-wrapper .brand-logo img").css("width", "60px");
+            $(".liveIcon").css("opacity", "0");
+        }
         else {
-            $(".nav-wrapper").css("background", "linear-gradient(to right top, #a11f41, #d33638, #641501fc, #f62525ed, #cb6c03)");
+            $(".nav-wrapper").css("background", "transparent");
             $(".nav-wrapper .brand-logo img").css("width", "60px");
             $(".liveIcon").css("opacity", "0");
 
