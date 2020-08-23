@@ -23,7 +23,7 @@
     //detect Scroll to show navbar
     $(window).scroll(function () {
         let scroll = $(window).scrollTop();
-        console.log('Sc', scroll);
+        // console.log('Sc', scroll);
         if (scroll < 10) {
             $(".nav-wrapper").css("background", "transparent");
             $(".nav-wrapper .brand-logo img").css("width", "100px");
@@ -61,6 +61,23 @@
 
         }
     });
+
+    //toggle Languages
+    $('#langSwitch').change(function () {
+        if (this.checked) {
+            $('html').lang = 'mr';
+            $('.eng').hide()
+            $('.mar').show()
+            $('ul.right').css('margin-right', '30%')
+            $('.mar').css('display', 'flex')
+        } else {
+            $('.mar').hide()
+            $('.eng').show()
+            $('ul.right').css('margin-right', '25%')
+            $('.eng').css('display', 'flex')
+        }
+    });
+
 
     /* Navbar Scripts */
     // jQuery to collapse the navbar on scroll

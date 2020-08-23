@@ -71,8 +71,28 @@ a.sidenav-trigger {
   display: flex;
   height: 9rem;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
+}
+
+.paraAboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mar {
+  display: none;
+}
+
+.switch {
+  position: fixed;
+  right: 2rem;
+  top: 1rem;
+}
+
+.switch label .lever {
+  border: 1px solid deepskyblue;
 }
 
 .aboutUsDiv {
@@ -80,6 +100,20 @@ a.sidenav-trigger {
   color: #f9d3ac;
   font-family: "Montserrat" !important;
   /* padding: 0 3rem; */
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 body,
@@ -846,6 +880,7 @@ nav {
 .detailsView {
   display: flex;
   flex-direction: column;
+  margin-bottom: 0.6rem;
 }
 
 .donationView {
@@ -860,7 +895,7 @@ nav {
 }
 
 .basic-2 img {
-  margin-bottom: 3.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .basic-2 h3 {
@@ -1138,7 +1173,7 @@ nav {
   flex-direction: row;
   justify-content: flex-start;
   margin-right: auto;
-  margin-left: 5rem;
+  margin-left: 0.5rem;
   margin-top: 3rem;
 }
 
@@ -1286,6 +1321,20 @@ a:hover.back-to-top {
   }
   .aboutDiv {
     height: 17rem !important;
+  }
+  .imgDiv {
+    height: 35rem;
+  }
+  .switch {
+    position: fixed;
+    top: 0;
+    right: 0.2rem;
+  }
+  .switch label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .aboutUsRow {
     flex-direction: column;
