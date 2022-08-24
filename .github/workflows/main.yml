@@ -1,6 +1,8 @@
 name: Matkar-Ka-Ganpati
 on: 
   push:
+    paths:
+      - Ganpati_site/**
     branches:
       - master
 jobs:
