@@ -20,3 +20,5 @@ jobs:
       run: aws s3 sync ./Ganpati_site/ s3://kdgbganeshotsav.com1 --delete
 
 
+
+
